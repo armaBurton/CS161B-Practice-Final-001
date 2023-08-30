@@ -10,8 +10,14 @@ int main()
     do
     {
         menu();
-        getInt(option);
 
+        cout << endl;
+
+        menuOption("What would you like to do? ", option);
+
+        cout << endl;
+
+        handleOption(option, item, count);
     } while (option != 5);
 
     // addItem(item, count);

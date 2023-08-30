@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstring>
 #include <limits>
+#include <iomanip>
 
 using namespace std;
 
@@ -14,6 +15,13 @@ const char MENU_ITEM[5][LEN] = {
     "Print Cart",
     "Checkout"};
 
+const char COLUMN_HEADERS[5][LEN] = {
+    "#",
+    "Item",
+    "Price",
+    "Qty",
+    "Total Cost"};
+
 struct Item
 {
     char name[LEN];
@@ -23,5 +31,12 @@ struct Item
 
 void greeting();
 void menu();
-void getInt(int &option);
+void menuOption(const char *prompt, int &num);
+void handleOption(int option, Item item[], int &count);
 void addItem(Item item[], int &count);
+void textualInput(const char *prompt, char name[]);
+void getDouble(const char *prompt, double &num);
+void getInt(const char *prompt, int &num);
+void printCart(Item item[], const int count);
+void printMenu();
+void removeItem(Item item[], int &count);
