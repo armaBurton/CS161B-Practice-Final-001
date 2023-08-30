@@ -20,7 +20,5 @@ int main()
         handleOption(option, item, count);
     } while (option != 5);
 
-    // addItem(item, count);
-
     return 0;
 }

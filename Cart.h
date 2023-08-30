@@ -40,3 +40,6 @@ void getInt(const char *prompt, int &num);
 void printCart(Item item[], const int count);
 void printMenu();
 void removeItem(Item item[], int &count);
+void modifyItem(Item item[], int count);
+void modify(Item &item);
+void handleCheckout(Item item[], const int count);
