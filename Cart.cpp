@@ -24,7 +24,7 @@ void menuOption(const char *prompt, int &num)
         cin.ignore(100, '\n');
         if (cin.fail())
         {
-            cout << "You chose poorly\n";
+            cout << "Invalid menu option.\n";
             cout << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
